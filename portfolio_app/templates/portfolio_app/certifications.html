@@ -1,0 +1,44 @@
+{% extends "portfolio_app/layout.html" %}
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Certifications</h2>
+    <div class="certifications">
+        <div class="certification-item">
+            <h4>Problem Solving through Programming in C</h4>
+            <p>Course by IIT-K (NPTEL) covering basics to complex problem-solving.</p>
+        </div>
+        <div class="certification-item">
+            <h4>Full Stack Web Development</h4>
+            <p>Course Completion Certification by Internshala, scored 91% in final assessment.</p>
+        </div>
+        <div class="certification-item">
+            <h4>Python Certification</h4>
+            <p>Hackerrank Certificate for Python Language.</p>
+        </div>
+        <div class="certification-item">
+            <h4>PEGA Certified Senior System Architect (CSSA)</h4>
+        </div>
+        <div class="certification-item">
+            <h4>PEGA Certified System Architect (CSA)</h4>
+        </div>
+        <div class="certification-item">
+            <h4>PEGA Certified Decisioning Consultant (CPDC)</h4>
+        </div>
+    </div>
+</div>
+
+<style>
+    .certifications {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .certification-item {
+        background: #f8f9fa;
+        padding: 15px;
+        border-left: 4px solid #007bff;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+{% endblock %}

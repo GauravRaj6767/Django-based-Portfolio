@@ -1,0 +1,48 @@
+{% extends 'portfolio_app/layout.html' %}
+
+{% block content %}
+<div class="container mt-5 text-center">
+    <h1>Welcome to My Portfolio</h1>
+    <p class="lead">I'm a passionate software developer specializing in full-stack web development and problem-solving.</p>
+    <a href="{% url 'about' %}" class="btn btn-primary">Learn More About Me</a>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center">Featured Projects</h2>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Portfolio Website</h4>
+                    <p class="card-text">A Django-based portfolio showcasing my work.</p>
+                    <a href="#" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Full Stack Web App</h4>
+                    <p class="card-text">A dynamic web application using Django and React.</p>
+                    <a href="#" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center">Skills</h2>
+    <ul class="list-group list-group-flush text-center">
+        <li class="list-group-item">Python | Django | JavaScript | React</li>
+        <li class="list-group-item">MySQL | PostgreSQL | Git</li>
+        <li class="list-group-item">Problem-solving | Teamwork | Leadership</li>
+    </ul>
+</div>
+
+<div class="container mt-5 text-center">
+    <h2>Get in Touch</h2>
+    <p>Email: your.email@example.com</p>
+    <a href="mailto:your.email@example.com" class="btn btn-outline-primary">Contact Me</a>
+</div>
+{% endblock %}
