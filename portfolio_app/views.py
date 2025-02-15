@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'portfolio_app/home.html')
+    return render(request, 'portfolio_app/index.html')
 
 
 def about(request):
