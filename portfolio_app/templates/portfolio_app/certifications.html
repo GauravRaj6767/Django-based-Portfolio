@@ -1,29 +1,70 @@
 {% extends "portfolio_app/layout.html" %}
+{% load static %}
 {% block content %}
 <div class="container mt-5">
     <h2 class="text-center">Certifications</h2>
     <div class="certifications">
+
+        <!-- NPTEL Certificate -->
         <div class="certification-item">
             <h4>Problem Solving through Programming in C</h4>
             <p>Course by IIT-K (NPTEL) covering basics to complex problem-solving.</p>
         </div>
+
+        <!-- Internshala Certificate -->
         <div class="certification-item">
             <h4>Full Stack Web Development</h4>
             <p>Course Completion Certification by Internshala, scored 91% in final assessment.</p>
+            <a href="https://trainings.internshala.com/view_certificate/AB550F14-CFAC-7C61-72CB-C0347A3DB875/47F075A8-461F-6E2B-E9CA-961E07216E3D/  " target="_blank" class="btn btn-primary">
+                View Certificate
+            </a>
         </div>
+
+        <!-- HackerRank Python Certificate -->
         <div class="certification-item">
-            <h4>Python Certification</h4>
-            <p>Hackerrank Certificate for Python Language.</p>
+            <h4>HackerRank Python Certification</h4>
+            <p>Earned from HackerRank, demonstrating strong skills in Python programming.</p>
+            <a href="https://www.hackerrank.com/certificates/194b1d350dd9" target="_blank" class="btn btn-primary">
+                View Certificate
+            </a>
         </div>
+
+        <!-- HackerRank SQL Certificate -->
+        <div class="certification-item">
+            <h4>HackerRank SQL Certification</h4>
+            <p>Earned from HackerRank, showcasing proficiency in SQL and database management.</p>
+            <a href="https://www.hackerrank.com/certificates/3e16d54f4d03" target="_blank" class="btn btn-primary">
+                View Certificate
+            </a>
+        </div>
+
+        <!-- PEGA CSSA Certificate -->
         <div class="certification-item">
             <h4>PEGA Certified Senior System Architect (CSSA)</h4>
+            <p>PEGA Certified Senior System Architect (CSSA)</p>
+            <a href="{% static 'portfolio_app/images/cssa_certificate.jpg' %}" target="_blank">
+                <img src="{% static 'portfolio_app/images/cssa_certificate.jpg' %}" alt="CSSA Certificate" class="img-fluid">
+            </a>
         </div>
+
+        <!-- PEGA CSA Certificate -->
         <div class="certification-item">
             <h4>PEGA Certified System Architect (CSA)</h4>
+            <p>PEGA Certified System Architect (CSA)</p>
+            <a href="{% static 'portfolio_app/images/csa_certificate.jpg' %}" target="_blank">
+                <img src="{% static 'portfolio_app/images/csa_certificate.jpg' %}" alt="CSA Certificate" class="img-fluid">
+            </a>
         </div>
+
+        <!-- PEGA CPDC Certificate -->
         <div class="certification-item">
             <h4>PEGA Certified Decisioning Consultant (CPDC)</h4>
+            <p>PEGA Certified Decisioning Consultant (CPDC)</p>
+            <a href="{% static 'portfolio_app/images/cpdc_certificate.jpg' %}" target="_blank">
+                <img src="{% static 'portfolio_app/images/cpdc_certificate.jpg' %}" alt="CPDC Certificate" class="img-fluid">
+            </a>
         </div>
+
     </div>
 </div>
 
@@ -39,6 +80,13 @@
         padding: 15px;
         border-left: 4px solid #007bff;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .certification-item img {
+        max-width: 100%;
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        padding: 5px;
+        border-radius: 5px;
     }
 </style>
 {% endblock %}
