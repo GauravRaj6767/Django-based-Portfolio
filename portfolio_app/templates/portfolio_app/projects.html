@@ -1,5 +1,35 @@
 {% extends 'portfolio_app/layout.html' %}
 
-{% block body %}
-<h1>Projects Page Data 1233456</h1>
-{% endblock body %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Projects</h1>
+    <div class="row">
+        <!-- Web Scrapping Application using Flask -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Web Scrapping Application using Flask</h4>
+                    <p class="card-text">
+                        A Python scrapper that fetches data from Amazon and Flipkart using Selenium and BeautifulSoup.
+                        It retrieves product names, searches for items across both sites, and displays the results on a page styled with custom CSS.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        <!-- Credential Storage Application -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Credential Storage Application</h4>
+                    <p class="card-text">
+                        A Python application featuring full CRUD functionality for managing user credentials.
+                        It uses SQLite3 for data storage with each database stored as a separate file, making it adaptable across multiple platforms and operating systems.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
